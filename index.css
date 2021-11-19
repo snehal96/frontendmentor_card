@@ -1,0 +1,151 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(36, 210, 109, 1) 0%,
+    rgba(32, 210, 126, 1) 0%,
+    rgba(20, 211, 175, 1) 0%,
+    rgba(16, 211, 191, 1) 0%,
+    rgba(41, 221, 211, 0.958420868347339) 0%,
+    rgba(83, 201, 218, 1) 100%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(6, 212, 231, 1) 100%
+  );
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+}
+
+.tl {
+  background-image: url("./assets/bg-pattern-bottom.svg");
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  transform: rotateX(180deg) rotateY(180deg);
+  top: 0vh;
+  left: 0vw;
+  z-index: 1;
+}
+
+.br {
+  background-image: url("./assets/bg-pattern-top.svg");
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0vh;
+  right: 0vw;
+  z-index: 1;
+}
+
+.card {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  height: 500px;
+  margin: auto;
+  z-index: 10000;
+  position: sticky;
+  display: inline-block;
+}
+
+.cover {
+  background-image: url("./assets/bg-pattern-card.svg");
+  height: 40%;
+  border-radius: 20px 20px 0 0;
+}
+
+.dp {
+  margin-top: -15%;
+  border-radius: 50%;
+}
+
+img {
+  border-radius: 50%;
+  width: 120px;
+  border: white 10px solid;
+}
+
+.blank {
+  height: 5%;
+}
+
+.name {
+  height: 15%;
+}
+
+.info {
+  display: flex;
+}
+
+.social {
+  width: 33%;
+}
+
+hr {
+  color: #80808042;
+  border: 1px solid #80808042;
+}
+
+.num {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.txt {
+  color: gray;
+  margin-top: -10%;
+}
+
+.nm {
+  font-size: x-large;
+  font-weight: 1000;
+  margin-top: 0px;
+}
+
+span {
+  margin-left: 10px;
+  color: gray;
+  font-weight: 400;
+}
+
+.country {
+  color: gray;
+  margin-top: -15px;
+  font-size: larger;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 75%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    z-index: 10000;
+    position: relative;
+  }
+
+  .tl {
+    top: 0vh;
+    left: 0vw;
+    z-index: 1;
+  }
+
+  .br {
+    bottom: 0vh;
+    right: 0vw;
+    z-index: 1;
+  }
+
+  .blank {
+    height: 0;
+  }
+
+  .txt {
+    margin-top: -10%;
+  }
+}
